@@ -19,7 +19,7 @@
 <body>
     <!-- NAVBAR -->
     <header id="navbarHeader">
-        <nav class="navbar navbar-header navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-header navbar-header-v2 navbar-expand-lg fixed-top">
             <div class="container-lg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
                     <i class="bi bi-list"></i>
@@ -35,13 +35,13 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item ">
-                                <a href="#" class="nav-link active">Home</a>
+                                <a href="#" class="nav-link ">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Case Study</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Services</a>
+                                <a href="#" class="nav-link active">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">Careers</a>
@@ -57,59 +57,17 @@
     </header>
 
     <main class="mainwrapper">
+        <section class="mainheadwrapper bg-image1">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corrupti consequuntur excepturi obcaecati libero! Asperiores dolore hic, neque eius, animi facere maiores nesciunt reprehenderit est quos saepe, nihil consequuntur, maxime?</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <div class="mainbodywrapper">
-
-            <section class="section hero-section">
-                <div class="collabr-hero-shape"><img src="img/in-hero-shape.svg" class="img-fluid"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-7">
-                          <div class="collabr-hero_inner">
-                            <div class="collabr-hero_content">
-                              <div class="collabr-hero_subtitle text-uppercase">The place where creators and brands meet quickly, directly and safely</div>
-                              <h1 class="collabr-hero_title">The Most Transparent Creator-Brand <br><span class="text-primary">Collaboration</span> Platform</h1>
-                            </div>
-                            <div class="collabr-hero_search">
-                              <div class="input-group search-input-group">
-                                <div class="input-group-text">
-                                  <span class="material-icons icon">search</span>
-                                </div> 
-                                <input type="text" class="form-control" placeholder="Search by Name Profession or Country">
-                                <button class="btn btn-primary ripple" type="button" id="">Search</button>
-                              </div>
-                            </div>
-                            <div class="collabr-hero_tags">
-                              <div class="collabr-hero_tagslabel">Popular Search : </div>
-                              <ul class="collabr-hero_tagslist list-unstyled">
-                                <li>
-                                  <span class="badge text-bg-light tag">Fashion</span>
-                                </li>
-                                <li>
-                                  <span class="badge text-bg-light tag">Technology</span>
-                                </li>
-                                <li>
-                                  <span class="badge text-bg-light tag">Beauty</span>
-                                </li>
-                                <li>
-                                  <span class="badge text-bg-light tag">Health</span>
-                                </li>
-                                <li>
-                                  <span class="badge text-bg-light tag">Travel</span>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-5">
-                          <div class="banner-image">
-                            <img src="img/dummy_images/in-hero-img.png" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
+          <section class="section">
               <div class="container">
                 <div class="row">
                   <div class="col-12">
@@ -320,8 +278,6 @@
                 </div>
               </div>
             </section>
-          
-
         </div>
         <footer class="footer">
           <div class="container">
@@ -460,6 +416,6 @@ const swiper1 = new Swiper('#swiperWork', {
     },
 });
 
-</script>    
+</script>
 </body>
 </html>
