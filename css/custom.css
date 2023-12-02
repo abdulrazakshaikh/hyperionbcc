@@ -127,6 +127,9 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	min-height: 120px;
 	background-color: var(--bs-light);
 }
+.mainheadwrapper .section-heading{
+	padding: 3.5rem 0;
+}
 .section{padding: var(--navbarheader-height) 1rem;}
 .section-heading{
 	display: flex;
@@ -191,7 +194,6 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	position: relative;
 	overflow: hidden;
 }
-
 .btn.ripple::before {
 	position: absolute;
 	width: 0px;
@@ -391,7 +393,8 @@ body::-webkit-scrollbar, .scroll-list::-webkit-scrollbar{width: 5px; height: 5px
 	.navbar-header .navbar-nav{--nav-spacing : 0.5rem; --bs-navbar-nav-link-padding-x : 1rem; --bs-nav-link-padding-y : 0.5rem;display: flex; column-gap: var(--nav-spacing);}
 	.navbar-header .navbar-nav>.nav-item{display: flex; align-items: center;}
 	.navbar-header .navbar-nav>.nav-item>.nav-link{
-		display: flex; align-items: center; justify-content: center; color: var(--navlink-color);border-radius: 0.35rem; font-size: 0.85rem; font-weight: 500;
+		letter-spacing: var(--letterspacing-small);
+		display: flex; align-items: center; justify-content: center; color: var(--navlink-color);border-radius: 0.35rem; font-size: 0.85rem; font-weight: 600;
 	}
 	.navbar-header .navbar-nav>.nav-item>.nav-link.active,
 	.navbar-header .navbar-nav>.nav-item>.nav-link:is(:hover){
@@ -840,3 +843,95 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 }
 /*------------------------------ HOMEPAGE END -------------------------------*/
 
+/*------------------------------ CONTACT START -------------------------------*/
+.form-card{
+	--bs-card-border-radius : 0.75rem;
+	margin-top: -2rem;
+
+}
+/*------------------------------ CONTACT END -------------------------------*/
+
+/*------------------------------ CAREERS START -----------------------------*/
+.careers-search{
+	display: flex;
+	align-items: flex-end;
+	gap: 1rem;
+}
+.careers-search .form-group{
+	flex: 1;
+}
+.careers-search .btn{
+	height: 45px;
+	padding: 0.375rem 1.75rem; 
+}
+.jobcard{}
+.jobcard .jobcard_body{
+	display : flex;
+	flex-direction: row;
+}
+.jobcard .jobcard_content{
+	display : flex;
+	flex-direction: column;
+	flex: 1;
+}
+.job-title{
+	margin: 0;
+	color: var(--text-color);
+	font-weight: bold;
+	font-size: 1.25rem;
+	letter-spacing: var(--letterspacing-small);
+}
+.job-desc{
+	margin: 0;
+	color: rgba(var(--text-color-rgb), 0.85);
+	font-weight: 500;
+	font-size: .95rem;
+	letter-spacing: var(--letterspacing-small);
+}
+.jobcard .jobcard_action{}
+
+.jobcard .jobcard_extra{
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 0.75rem;
+}
+.jobcard .jobcard_extra .badge{
+	border: 1px solid var(--secondary);
+	color: var(--secondary);
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	line-height: normal;
+	padding: 0.175rem 0.85rem;
+}
+.jobcard .jobcard_extra .badge .icon{
+	font-size: 1rem;
+	color: rgba(var(--secondary-rgb), 0.85);
+}
+.jobcard .jobcard_extra .badge .badge-text{
+	font-size: 0.8rem;
+	line-height: 20px;
+}
+.insta-card{
+	height: 250px;
+	border-radius: 0.85rem;
+}
+.insta-card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media (max-width: 767.98px){
+	.jobcard .jobcard_body{
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.careers-search{
+		flex-wrap: wrap;
+	}
+	.careers-search .btn{
+		flex: 1 0 100%;
+	}
+}
+/*------------------------------ CAREERS END -------------------------------*/
