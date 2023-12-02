@@ -815,16 +815,19 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 		flex-direction: column;
 	}
 	.herogrid_wrapper{align-items: stretch;}
+	.hero-title{font-size: 2rem; line-height: 36px}
+
 }
 @media (max-width: 767.98px){
 	.hero-section{padding-top: calc(var(--navbarheader-height) + 2rem)}
+	.herogrid_wrapper{
+		    flex-direction: column;
+	}
 	.herogrid_card{
 		height: auto;
     	min-height: 200px;
 	}
-	.herogrid_wrapper .herogrid_item:nth-child(1) .herogrid_card{
-		height: 100% !important;
-	}
+	
 }
 @media (max-width: 576.98px){
 }
