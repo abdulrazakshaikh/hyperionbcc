@@ -190,6 +190,9 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 		gap: 1rem;
 		text-align: center;
 	}
+	.section-heading .section-title.large{
+		font-size: 2.375rem;
+	}
 	
 }
 /*======================= BOOTSTRAP OVERWRITES START ========================*/
