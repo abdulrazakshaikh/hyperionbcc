@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 
 
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /*================================== FONTS ==================================*/
 
@@ -119,11 +119,8 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	text-decoration: none; box-shadow: none; outline: none;
 }
 .mainwrapper{}
-.mainbodywrapper{/*	padding: 1rem;*/}
+.mainbodywrapper{}
 .mainheadwrapper{
-/*	padding-top: var(--navbarheader-height);	*/
-/*	min-height: 35vh;*/
-/*	min-height: 320px;*/
 	min-height: 120px;
 	background-color: var(--bs-light);
 }
@@ -280,7 +277,8 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	border-color: var(--bs-btn-border-color);
 }
 .btn-fadedprimary{
-    color: var(--primary) !important; padding: 0.35rem 0.85rem !important; background-color: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary) !important; padding: 0.35rem 0.85rem !important; background-color: rgba(var(--primary-rgb), 0.15);
+    font-weight: 600;
 }
 .btn-fadedprimary:is(:hover, :focus, :active){
 	color: var(--primary) !important; 
@@ -1014,3 +1012,75 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
     line-height: 20px;
 }
 /*--------------------------- SERVICES END ---------------------------------*/
+
+/*--------------------------- CASE STUDY START -----------------------------*/
+.cs-grid_list{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	gap: 0 3rem;
+	flex-wrap: wrap;
+}
+.cs-grid_list .cs-grid_listitem{flex: 0 0 35%;}
+.cs-grid_itemcard{
+	border-radius: 0rem; position: relative;
+	--bs-card-border-width: 0; --bs-card-border-radius : 1rem; 
+    --bs-card-spacer-y : 0.75rem; --bs-card-spacer-x : 0.275rem;
+    --bs-card-cap-padding-y: 0; --bs-card-cap-padding-x: 0;
+    --bs-card-cap-bg : transparent;
+}
+
+.cs-grid_itemcard .cs-grid_itemhead{
+	--pattbox-size: 28px; position: relative;
+}
+.cs-grid_itemcard .cs-grid_itemhead:before{
+	content: ''; width: var(--pattbox-size); height: var(--pattbox-size); background-color: var(--pattbox-color); position: absolute;
+}
+.cs-grid_itemcard .cs-grid_itemhead .cs-grid_image{
+	border-radius: var(--bs-card-border-radius); overflow: hidden; height: 250px;
+} 
+.cs-grid_itemcard .cs-grid_itemhead .cs-grid_image img{
+	width: 100%; height: 100%; object-fit: cover;
+}
+.cs-grid_itemcard .cs-grid_itemhead.top-right .cs-grid_image{
+	border-top-right-radius: 0px; margin-right: var(--pattbox-size); margin-top: var(--pattbox-size);
+}
+.cs-grid_itemcard .cs-grid_itemhead.bottom-right .cs-grid_image{
+	border-bottom-right-radius: 0px; margin-right: var(--pattbox-size); 
+}
+.cs-grid_itemcard .cs-grid_itemhead.top-left .cs-grid_image{
+	border-top-left-radius: 0px; 
+/*	margin-left: var(--pattbox-size); margin-top: var(--pattbox-size);*/
+}
+.cs-grid_itemcard .cs-grid_itemhead.bottom-left .cs-grid_image{
+	border-bottom-left-radius: 0px; margin-left: var(--pattbox-size); 
+}
+.cs-grid_itemcard .cs-grid_itemhead.top-right:before{
+	right: 0px; top: 0px;
+}
+.cs-grid_itemcard .cs-grid_itemhead.bottom-right:before{
+	right: 0px; bottom: calc(var(--pattbox-size) * -1);
+}
+.cs-grid_itemcard .cs-grid_itemhead.top-left:before{
+	left: calc(var(--pattbox-size) * -1); top: calc(var(--pattbox-size) * -1);
+}
+.cs-grid_itemcard .cs-grid_itemhead.bottom-left:before{
+	left: 0px; bottom: calc(var(--pattbox-size) * -1);
+}
+.cs-grid_itemcard .card-footer{
+	text-align: right;
+}
+.cs-grid_itemcard .cs-grid_subtitle{
+	font-size: 0.8rem; font-weight: 700; line-height: 24px; color: rgba(var(--text-color-rgb), 0.85); margin-bottom: 0.275rem;
+    text-transform: uppercase; letter-spacing: var(--letterspacing-small);
+
+} 
+.cs-grid_itemcard .cs-grid_title{
+	font-size: 1.375rem; font-weight: 600; line-height: 26px; color: var(--text-color); margin-bottom: 0.275rem; 
+} 
+
+@media (max-width: 767.98px){
+.cs-grid_list .cs-grid_listitem{flex: 0 0 85%}
+.cs-grid_list{gap: 5rem 0}
+}
+/*--------------------------- CASE STUDY END -------------------------------*/
