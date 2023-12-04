@@ -1080,7 +1080,8 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 } 
 
 @media (max-width: 767.98px){
-.cs-grid_list .cs-grid_listitem{flex: 0 0 85%}
+.cs-grid_list .cs-grid_listitem{flex: 0 0 90%}
 .cs-grid_list{gap: 5rem 0}
+.cs-grid_itemcard{margin-top: 0px !important}
 }
 /*--------------------------- CASE STUDY END -------------------------------*/
