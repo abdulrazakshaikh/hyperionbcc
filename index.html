@@ -20,9 +20,9 @@
     <!-- NAVBAR -->
     <header id="navbarHeader">
         <nav class="navbar navbar-header navbar-expand-lg fixed-top">
-            <div class="container-lg">
+            <div class="container-lg justify-content-start">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
-                    <i class="bi bi-list"></i>
+                    <i class="bi bi-text-left"></i>
                 </button>
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.svg" class="img-fluid" alt="">
@@ -62,7 +62,7 @@
             <section class="section hero-section">
                 <!-- <div class="hero-shape"><img src="img/in-hero-shape.svg" class="img-fluid"></div> -->
                 <div class="container-fluid">
-                  <div class="row my-5">
+                  <div class="row my-5 py-5">
                     <div class="col-12">
                       <h2 class="hero-title">The drive to make it <span class="text-primary">big</span></h2>
                       <h2 class="hero-title">The strive to make it <span class="text-primary">happen</span></h2>
@@ -175,7 +175,7 @@
                 </div>
             </section>
 
-            <section class="section pb-0 pt-5">
+            <section class="section my-5">
               <div class="container">
                 <div class="row">
                   <div class="col-12">
@@ -184,27 +184,27 @@
                       
                         <div class="swiper-slide">
                           <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/1280px-Godrej_Logo.svg.png" class="img-fluid" alt="">
+                            <img src="img/client_images/image1.png" class="img-fluid" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cipla_logo.svg/1280px-Cipla_logo.svg.png" class="img-fluid" alt="">
+                            <img src="img/client_images/image2.png" class="img-fluid" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="brand-image">
-                            <img src="https://listcarbrands.com/wp-content/uploads/2017/11/Mahindra-Logo-2000.png" class="img-fluid" alt="">
+                            <img src="img/client_images/image3.png" class="img-fluid" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/IIM_Kozhikode_Logo.svg/1200px-IIM_Kozhikode_Logo.svg.png" class="img-fluid" alt="">
+                            <img src="img/client_images/image4.png" class="img-fluid" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
                           <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cipla_logo.svg/1280px-Cipla_logo.svg.png" class="img-fluid" alt="">
+                            <img src="img/client_images/image5.png" class="img-fluid" alt="">
                           </div>
                         </div>
                       </div>
@@ -221,7 +221,6 @@
                     <div class="section-heading">
                       <div class="section-content">
                         <h2 class="section-title">Our Work <span class="text-primary">Summary</span></h2>
-                        <p class="section-subtitle">checkout out our works</p>
                       </div>
                       <div class="section-action">
                         <button class="btn btn-link btn-viewall btn-fadedprimary">Learn More</button>
@@ -368,26 +367,22 @@
                   <div class="row">
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <label class="form-label text-white">Name</label>
-                        <input type="text" class="form-control py-2" placeholder="enter your full name" />
+                        <input type="text" class="form-control py-2 form-transparent" placeholder="your name" />
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <label class="form-label text-white">Email Address</label>
-                        <input type="text" class="form-control py-2" placeholder="enter your email address" />
+                        <input type="text" class="form-control py-2 form-transparent" placeholder="your email" />
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <label class="form-label text-white">Subject</label>
-                        <input type="text" class="form-control py-2" placeholder="enter subject" />
+                        <input type="text" class="form-control py-2 form-transparent" placeholder="subject" />
                       </div>
                     </div>
                     <div class="col-12 col-md-12">
                       <div class="form-group">
-                        <label class="form-label text-white">Message</label>
-                        <textarea rows="5" class="form-control py-2" placeholder="enter a message"></textarea>
+                        <textarea rows="5" class="form-control py-2 form-transparent" placeholder="your message"></textarea>
                       </div>
                     </div>
                     <div class="col-12 text-end">
@@ -507,8 +502,8 @@ const swiper1 = new Swiper('#swiperWork', {
     lazy: true,
     loop: true,
     mousewheel: false,
-    keyboard: true,
-    grabCursor: true,
+    // keyboard: true,
+    // grabCursor: true,
     centeredSlides: false,
     autoplay: {     
         delay: 3000,   
@@ -516,7 +511,7 @@ const swiper1 = new Swiper('#swiperWork', {
     // speed: 3000,    
     slidesPerView: 1,
     spaceBetween: 20,
-    // freeMode: true,
+    freeMode: true,
     breakpoints: {
       576: {
         slidesPerView: 1,
@@ -541,8 +536,8 @@ const swiper2 = new Swiper('#swiperClient', {
     lazy: true,
     loop: true,
     mousewheel: false,
-    keyboard: true,
-    grabCursor: true,
+    // keyboard: true,
+    // grabCursor: true,
     centeredSlides: false,
     autoplay: {     
         delay: 1000,
@@ -565,7 +560,7 @@ const swiper2 = new Swiper('#swiperClient', {
         spaceBetween: 20,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 20,
       },
     },
