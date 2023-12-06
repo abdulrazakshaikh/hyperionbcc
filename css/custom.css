@@ -828,7 +828,12 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 
 @media (max-width: 991.98px){
-	
+	.circle-item-list{
+		flex-wrap: wrap;
+	}
+	.circle-item-list .circle-item{
+		flex: 0 0 25%;
+	}
 	.circle-item-list .circle-item:nth-child(even){
 		flex-direction: column;
 	}
@@ -848,9 +853,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 		height: auto;
     	min-height: 200px;
 	}
-	.circle-item-list{
-		flex-wrap: wrap;
-	}
+	
 }
 @media (max-width: 576.98px){
 	/*.circle-item-list .circle-item .circle{
