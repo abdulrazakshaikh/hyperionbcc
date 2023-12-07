@@ -836,9 +836,11 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	}
 	.circle-item-list .circle-item:nth-child(even){
 		flex-direction: column;
+		margin-top: 4rem;
 	}
 	.circle-item-list .circle-item:nth-child(odd){
-		flex-direction: column;
+		flex-direction: column-reverse;
+		margin-bottom: 4rem;
 	}
 	.herogrid_wrapper{align-items: stretch;}
 	.hero-title{font-size: 2rem; line-height: 36px}

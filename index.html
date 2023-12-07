@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
@@ -179,35 +179,32 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12">
-                    <div class="swiper p-3" id="swiperClient">
-                      <div class="swiper-wrapper">
-                      
-                        <div class="swiper-slide">
+                    <div class="owl-carousel owlClient">
+                        <div class="item">
                           <div class="brand-image">
                             <img src="img/client_images/image1.png" class="img-fluid" alt="">
                           </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="item">
                           <div class="brand-image">
                             <img src="img/client_images/image2.png" class="img-fluid" alt="">
                           </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="item">
                           <div class="brand-image">
                             <img src="img/client_images/image3.png" class="img-fluid" alt="">
                           </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="item">
                           <div class="brand-image">
                             <img src="img/client_images/image4.png" class="img-fluid" alt="">
                           </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="item">
                           <div class="brand-image">
                             <img src="img/client_images/image5.png" class="img-fluid" alt="">
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -230,7 +227,7 @@
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <div class="swiper p-3" id="swiperWork">
+                    <!-- <div class="swiper p-3" id="swiperWork">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="card work-card">
@@ -286,6 +283,60 @@
                           </div>
                         </div>
                       </div>
+                    </div> -->
+                    <div class="owl-carousel owlWork">
+                        <div class="item">
+                          <div class="card work-card">
+                            <div class="card-image">
+                              <img src="img/work_images/image1.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                              <div class="work-meta_head">
+                                <h5 class="work-meta_title">Covestro (India) Pvt. Ltd.</h5>
+                                <p  class="work-meta_desc">One of world’s leading producers of high-performance polymers, Covestro offers a wide range of innovative and sustainable solutions in sectors like, automobile, construction, healthcare etc.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="card work-card">
+                            <div class="card-image">
+                              <img src="img/work_images/image2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                              <div class="work-meta_head">
+                                <a href="" class="work-meta_title stretched-link">IIM-Kozhikode</a>
+                                <p class="work-meta_desc">One of India’s premier management schools, Indian Institute of Management Kozhikode provides comprehensive academic programmes in business education.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="card work-card">
+                            <div class="card-image">
+                              <img src="img/work_images/image3.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                              <div class="work-meta_head">
+                                <a href="" class="work-meta_title stretched-link">Riverdale Pune</a>
+                                <p class="work-meta_desc">A micro-township project in Kharadi, Pune. Close to the metro life, daily conveniences, IT sector and nature makes Riverdale Project truly fascinating.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="card work-card">
+                            <div class="card-image">
+                              <img src="img/work_images/image4.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                              <div class="work-meta_head">
+                                <a href="" class="work-meta_title stretched-link">Camran Mirza</a>
+                                <p class="work-meta_desc">A real estate businessman based in the United Kingdom offers a wide range of luxurious and elegant properties under companies named, Kingmead Homes & Tydwell Group.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -385,15 +436,13 @@
                         <textarea rows="5" class="form-control py-2 form-transparent" placeholder="your message"></textarea>
                       </div>
                     </div>
-                    <div class="col-12 text-end">
+                    <div class="col-12 text-center">
                       <button class="btn btn-dark px-5 py-3">Submit</button>
                     </div>
                   </div>
                 </form>
               </div>
             </section>
-          
-
         </div>
         <footer class="footer">
           <div class="container">
@@ -487,85 +536,66 @@
           </div>
         </footer>
     </main>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Slider JS -->
+    <script src="js/owl.carousel.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-
 <script>
-
-const swiper1 = new Swiper('#swiperWork', {
-    lazy: true,
-    loop: true,
-    mousewheel: false,
-    // keyboard: true,
-    // grabCursor: true,
-    centeredSlides: false,
-    autoplay: {     
-        delay: 3000,   
-    },   
-    // speed: 3000,    
-    slidesPerView: 1,
-    spaceBetween: 20,
-    freeMode: true,
-    breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
+$('.owlClient').owlCarousel({
+    loop:true,
+    margin:10,
+    lazyLoad:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+        }
+    }
 });
+$('.owlWork').owlCarousel({
+    loop:true,
+    margin:20,
+    lazyLoad:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+        }
+    }
+})  
+</script>
 
-const swiper2 = new Swiper('#swiperClient', {
-    lazy: true,
-    loop: true,
-    mousewheel: false,
-    // keyboard: true,
-    // grabCursor: true,
-    centeredSlides: false,
-    autoplay: {     
-        delay: 1000,
-    },   
-    // speed: 3000,    
-    slidesPerView: 1,
-    spaceBetween: 20,
-    // freeMode: true,
-    breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-    },
-});
-
-</script>    
 </body>
 </html>
