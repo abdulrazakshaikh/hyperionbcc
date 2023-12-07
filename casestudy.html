@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
@@ -55,7 +55,6 @@
             </div>
         </nav>
     </header>
-
     <main class="mainwrapper">
         <section class="mainheadwrapper bg-image1">
           <div class="container">
@@ -76,7 +75,6 @@
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  
                   <ul class="list-unstyled cs-grid_list">
                     <li class="cs-grid_listitem ">
                       <div class="card cs-grid_itemcard">
@@ -92,7 +90,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                          <button class="btn btn-fadedprimary rounded-pill ms-auto">Read More</button>
+                          <a href="casestudy-1.html" class="btn btn-fadedprimary rounded-pill ms-auto">Read More</a>
                         </div>
                       </div>
                     </li>
@@ -110,7 +108,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                          <button class="btn btn-fadedprimary rounded-pill ms-auto">Read More</button>
+                          <a href="casestudy-2.html" class="btn btn-fadedprimary rounded-pill ms-auto">Read More</a>
                         </div>
                       </div>
                     </li>
@@ -129,7 +127,7 @@
                             
                         </div>
                         <div class="card-footer">
-                          <button class="btn btn-fadedprimary rounded-pill ms-auto">Read More</button>
+                          <a href="casestudy-3.html" class="btn btn-fadedprimary rounded-pill ms-auto">Read More</a>
                         </div>
                       </div>
                     </li>
@@ -147,7 +145,7 @@
                             </h5>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-fadedprimary rounded-pill ms-auto">Read More</button>  
+                            <a href="casestudy-4.html" class="btn btn-fadedprimary rounded-pill ms-auto">Read More</a>
                         </div>
                       </div>
                     </li>
@@ -156,44 +154,41 @@
               </div>
             </div>
           </section>
-          <section class="section pb-0 pt-5">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="swiper p-3" id="swiperClient">
-                      <div class="swiper-wrapper">
-                      
-                        <div class="swiper-slide">
-                          <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/1280px-Godrej_Logo.svg.png" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cipla_logo.svg/1280px-Cipla_logo.svg.png" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="brand-image">
-                            <img src="https://listcarbrands.com/wp-content/uploads/2017/11/Mahindra-Logo-2000.png" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/IIM_Kozhikode_Logo.svg/1200px-IIM_Kozhikode_Logo.svg.png" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="brand-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cipla_logo.svg/1280px-Cipla_logo.svg.png" class="img-fluid" alt="">
-                          </div>
+          <section class="section my-5 py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="owl-carousel owlClient">
+                      <div class="item">
+                        <div class="brand-image">
+                          <img src="img/client_images/image1.png" class="img-fluid" alt="">
                         </div>
                       </div>
-                    </div>
+                      <div class="item">
+                        <div class="brand-image">
+                          <img src="img/client_images/image2.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="brand-image">
+                          <img src="img/client_images/image3.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="brand-image">
+                          <img src="img/client_images/image4.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="brand-image">
+                          <img src="img/client_images/image5.png" class="img-fluid" alt="">
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </section>
         </div>
         <footer class="footer">
           <div class="container">
@@ -287,48 +282,42 @@
           </div>
         </footer>
     </main>
+    
+    <!-- Jquery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Slider JS -->
+    <script src="js/owl.carousel.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 <script>
-const swiper2 = new Swiper('#swiperClient', {
-    lazy: true,
-    loop: true,
-    mousewheel: false,
-    keyboard: true,
-    grabCursor: true,
-    centeredSlides: false,
-    autoplay: {     
-        delay: 1000,
-    },   
-    // speed: 3000,    
-    slidesPerView: 1,
-    spaceBetween: 20,
-    // freeMode: true,
-    breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-});  
+$('.owlClient').owlCarousel({
+    loop:true,
+    margin:10,
+    lazyLoad:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+        }
+    }
+});
 </script>
 </body>
 </html>
