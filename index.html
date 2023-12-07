@@ -414,30 +414,30 @@
 
             <section class="section bg-primary">
               <div class="container">
-                <form action="">
+                <form action="process_form.php" method="post">
                   <div class="row">
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <input type="text" class="form-control py-2 form-transparent" placeholder="your name" />
+                        <input type="text" name="name" class="form-control py-2 form-transparent" placeholder="your name" />
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <input type="text" class="form-control py-2 form-transparent" placeholder="your email" />
+                        <input type="text" name="email" class="form-control py-2 form-transparent" placeholder="your email" />
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="form-group">
-                        <input type="text" class="form-control py-2 form-transparent" placeholder="subject" />
+                        <input type="text" name="subject" class="form-control py-2 form-transparent" placeholder="subject" />
                       </div>
                     </div>
                     <div class="col-12 col-md-12">
                       <div class="form-group">
-                        <textarea rows="5" class="form-control py-2 form-transparent" placeholder="your message"></textarea>
+                        <textarea rows="5" name="message" class="form-control py-2 form-transparent" placeholder="your message"></textarea>
                       </div>
                     </div>
                     <div class="col-12 text-center">
-                      <button class="btn btn-dark px-5 py-3">Submit</button>
+                      <button type="submit" class="btn btn-dark px-5 py-3">Submit</button>
                     </div>
                   </div>
                 </form>
@@ -538,7 +538,7 @@
     </main>
 
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
