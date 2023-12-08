@@ -980,12 +980,13 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .services-card{
 	--bs-card-border-width: 0;
 	--bs-card-cap-bg: transparent;
-	--bs-card-border-radius: 1rem;
+	--bs-card-border-radius: 0px;
+	--bs-card-inner-border-radius: 0px;
 	--bs-card-img-overlay-padding : 1rem 0;
 	overflow: hidden;
 }
-.services-card:hover{box-shadow: var(--boxshadow);}
-.services-card:hover .card-image>img{transform: scale(1.1);	transition: all 0.3s ease;}
+/*.services-card:hover{box-shadow: var(--boxshadow);}*/
+/*.services-card:hover .card-image>img{transform: scale(1.1);	transition: all 0.3s ease;}*/
 .services-card .card-image{height: 250px;overflow: hidden;}
 .services-card .card-image>img{	transition: all 0.3s ease;width: 100%;height: 100%;	object-fit: cover;}
 .services-card .services-title{
@@ -996,9 +997,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	display: inline-flex;
 	font-size: 1rem;
 	font-weight: bold;
-	border-radius: 0 0.75rem 0.75rem 0;
 }
-
 .services-text{
 	color: var(--text-color);
 	font-size: 0.95rem;
@@ -1043,6 +1042,22 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	color: var(--text-color);
 	margin: 0;
     line-height: 20px;
+}
+.services-title{
+	font-family: var(--secondaryfont);
+    line-height: normal;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 3.275rem;
+    margin: 0;
+    line-height: normal;
+}
+.services-subtitle{
+    line-height: normal;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
 }
 /*--------------------------- SERVICES END ---------------------------------*/
 
