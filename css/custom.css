@@ -1037,16 +1037,29 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 }
 /*.services-card:hover{box-shadow: var(--boxshadow);}*/
 /*.services-card:hover .card-image>img{transform: scale(1.1);	transition: all 0.3s ease;}*/
-.services-card .card-image{height: 250px;overflow: hidden;}
+.services-card .card-image{height: 250px;overflow: hidden; padding-left: 0.75rem}
 .services-card .card-image>img{	transition: all 0.3s ease;width: 100%;height: 100%;	object-fit: cover;}
 .services-card .services-title{
-	background-color: #ffffff;
+	background-color: #F9F8F4;
 	color: var(--text-color);
 	text-transform: uppercase;
 	padding: 0.75rem 1rem;
 	display: inline-flex;
 	font-size: 1rem;
 	font-weight: bold;
+	position:relative;
+}
+.services-card .services-title:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 12px 12px;
+    border-color: transparent transparent #DAD6C8 transparent;
+    transform: rotate(0deg);
 }
 .services-text{
 	color: var(--text-color);
